@@ -9,23 +9,24 @@ interface props{
 
     lang:string
 }
-const routes = [
-    {
-        name: "Home",
-        path: "/",
-    },
-    {
-        name: "Contact",
-        path: "/contact",
-    },
-]
+
 const NavbarBase:React.FC<props> = ({t,lang}) => {
+    const routes = [
+        {
+            name: "Home",
+            path: `/${lang}`,
+        },
+        {
+            name: "Contact",
+            path: `/${lang}/contact`,
+        },
+    ]
     const patheName= usePathname()
 const router = useRouter()
 const s=patheName.slice(3)
 console.log(s)
 const onClick=()=>{
-    
+
   if(patheName.startsWith("/en"))
    router.replace(`/ar${s}`)
   if(patheName.startsWith("/ar"))
@@ -51,7 +52,7 @@ const onClick=()=>{
 }
 {/* <div className="texl-2xl font-medium "> */}
 <button  className="bg-red-500 text-black rounded-full text-center font-semibold p-2 mx-2" onClick={onClick}  >
-  {patheName==="/ar" ? t("en") : t("ar")}
+  {patheName ==="/ar" ? t("en") : t("ar")}
 </button>
 </div>
 {/* <h1>
