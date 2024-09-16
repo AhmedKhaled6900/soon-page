@@ -38,7 +38,7 @@ const onClick=()=>{
 <div className="flex items-center justify-between p-5 text-red-500 bg-black ">
 
 <div>
-<Link href={"/"}  >
+<Link href={`/${lang}`}  >
 <h1 className="font-bold text-3xl">
     {t("logo")}
 </h1>
@@ -52,7 +52,7 @@ const onClick=()=>{
 }
 {/* <div className="texl-2xl font-medium "> */}
 <button  className="bg-red-500 text-black rounded-full text-center font-semibold p-2 mx-2" onClick={onClick}  >
-  {patheName ==="/ar" ? t("en") : t("ar")}
+  {patheName ==="/ar" ? t("lang") : t("lang")}
 </button>
 </div>
 {/* <h1>

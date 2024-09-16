@@ -22,7 +22,7 @@ import Footer from "../components/footer";
 const languages = ['en', 'ar']
 
 export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }))
+  return languages.map((lang) => ({ lang }))
 }
 
 export const metadata: Metadata = {
@@ -54,7 +54,7 @@ props
 
 </div>
         
-                <Navbar  lang={lang}></Navbar>
+                <Navbar lang={lang}></Navbar>
 
         {children}
 
