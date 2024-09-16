@@ -1,0 +1,14 @@
+{
+    "question":"Have a question ? ",
+    "answer":"We would love to hear from you ",
+    "email":"Email",
+    "name":"Name",
+    "yourname":"Your Name",
+    "message":"Message",
+    "yourmessage":"Your Message",
+    "namerequired":"Name is required",
+    "emailrequired":"Email is required",
+    "subjectrequired":"Subject is required",
+    "send":"Send",
+    "sent":"Sent"
+}

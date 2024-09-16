@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+body {
+  color:antiquewhite;
+height: 100%;
+}
+.bg-bg {
+  background-image: url("../public/bg.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat; /* Prevents repeating of the image */
+  background-position: center;
+}
+
+.animated-text {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.animated-text span {
+  background-image: linear-gradient(270deg, #FF3131, #F88379, #9c1920, #0e0d0d);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 2s ease infinite;
+  display: inline-block;
+}
+
+.animated-text span:nth-child(1) { animation-delay: 0s; }
+.animated-text span:nth-child(2) { animation-delay: 0.1s; }
+.animated-text span:nth-child(3) { animation-delay: 0.4s; }
+.animated-text span:nth-child(4) { animation-delay: 0.6s; }
+.animated-text span:nth-child(5) { animation-delay: 0.8s; }
+.animated-text span:nth-child(6) { animation-delay: 1s; }
+.animated-text span:nth-child(7) { animation-delay: 1.2s; }
+.animated-text span:nth-child(8) { animation-delay: 1.4s; }
+/* Repeat for each letter */
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.ar-animated-text {
+  font-size: 48px;
+  font-weight: bold;
+  background-image: linear-gradient(270deg, #FF3131, #F88379, #9c1920, #0e0d0d);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hr {
+  /* font-size: 48px; */
+  font-weight: bold;
+  background-image: linear-gradient(270deg, #FF3131, #F88379, #9c1920);
+  background-size: 800% 800%;
+  /* -webkit-background-clip: text; */
+  /* background-clip: text; */
+  color: transparent;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.form-bg{
+  background-color: #00000049;
+}
