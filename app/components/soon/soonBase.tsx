@@ -14,7 +14,7 @@ const CountdownTimer :React.FC<Props> = ({
     lang,
     t
 }) => {
-  const targetDate = new Date("2024-12-31T23:59:59");
+  const targetDate = new Date("2025-12-31T23:59:59");
 
   const [timeLeft, setTimeLeft] = useState({
     months: 0,
